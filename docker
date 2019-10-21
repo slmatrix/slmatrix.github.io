@@ -25,3 +25,22 @@ these are cmds to run on ubuntu. it works for me on ubuntu on 18.04.2.
 
 ```
 
+
+### some useful docker commands
+
+
+`docker save -o <path_to_file> <container_name>`
+
+`docker commit <old_image_name> <new_image_name>`
+
+`docker exec -it <container_name> /bin/bash`
+
+`docker run --runtime=nvidia -e NVIDIA_VISIBLE_DEVICEs=all -it -v /home/:/home/container/cuda-10.0:custom_build /bin/bash
+
+`docker load --input <image.tar>`
+
+`docker rename <old_name> <new_name>`
+
+`./bin/x86_64/linux/release/deviceQuery | tail -n 1`
+
+`jypyter notebook --no-browser --port=8080 --ip=127.0.0.1`

@@ -1,0 +1,19 @@
+## pytorch
+
+im going to teach myself install pytorch. lets go.
+
+
+### install pytorch
+
+these are cmds to run on ubuntu. it works for me on ubuntu on 18.04.2.
+please read my docker webpage; using a container always works.
+follow these instructions only after making a cuda container
+
+```markdown
+`nvidia-docker run -it -v /home/<user_name>/shared_folder:/root/ cuda_build`
+
+for cuda10 and python3.6. other configs can be found [here](https://pytorch.org/get-started/locally/#linux-installation)
+`pip3 install https://download.pytorch.org/whl/cu100/torch-1.0.1.post2-cp36-cp36m-linux_x86-64.whl`
+`pip3 install torchvision`
+`python3 -c "import torch; print(torch.cuda.is_available())"`
+```

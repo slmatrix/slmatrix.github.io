@@ -1,0 +1,23 @@
+## cuda 
+
+im going to teach myself make a cuda container. lets go.
+
+
+### install cuda
+
+these are cmds to run on ubuntu. it works for me on ubuntu on 18.04.2.
+please read my docker webpage; using a container always works.
+
+```markdown
+`nvidia-docker run -it -v /home/<user_name>/shared_folder:/root/ ubuntu`
+
+`apt install openssh-client`
+`apt install wget`
+`wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64`
+`dpkg -i cuda-repo-ubuntu1804-10-0-local-10.0.130-410.48_1.0-1_amd64.deb``
+`apt install gnupg`
+`apt-key add /var/cuda-repo-version>/7fa2af80.pub`
+`apt update`
+`apt install build-essential`
+`apt install cuda-10-0`
+```

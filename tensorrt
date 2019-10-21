@@ -1,0 +1,29 @@
+## tenorrt
+
+im going to teach myself make a tenorrt container. lets go.
+this shit is the biggest headache I've had with NVIDIA so far. 
+you MUST make sure the cuda for your GPU EXACTLY matches compatibility with
+tensorrt.
+
+for me, i use cuda 10.0 (cuz i got a 2080 Ti) and its tensorrt version MUST be
+5.1.5.0 
+
+
+### install tensorrt
+
+these are cmds to run on ubuntu. it works for me on ubuntu on 18.04.2.
+please read my docker webpage and then my cuda webpage; using a container always
+works.
+
+```markdown
+`nvidia-docker run -it -v /home/<user_name>/shared_folder:/root/ cuda_build`
+
+`download tensorrt from nvidia`
+`dpkg -i nv-tensorrt-repo`
+`apt-key add /var/nv-tensorrt-repo`
+`apt update`
+`apt install libnvinfer5=5.1.2-1+cuda10.0`
+`apt install libnvinfer-dev=5.1.2-1+cuda10.0`
+`apt install python3-libnvinfer-dev`
+`apt install tensorrt`
+```
